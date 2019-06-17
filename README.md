@@ -1,7 +1,11 @@
 # deployment-webhook
 
 ## This is a Simple Container Deployment Controller based on https://github.com/Praisebetoscience/dockerhub-webhook.
-It implements a Flask Webserver waiting for Docker Hub web hook called after Image is pushed to a repository. Shell script is executed after web hook call is received. Web hook URL has a form:
+It implements a Flask Webserver waiting for Docker Hub web hook called after Image is pushed to a repository. Shell script is executed after web hook call is received. 
+
+**This is an Educational Example, never meant to be used in Production. There is NO WARRANTY for the Code.**
+
+Web hook URL has a form:
 
 ```
 http://<your-domain>:<port>/hubhook?key=<APIKEY>
