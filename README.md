@@ -10,7 +10,7 @@ http://<your-domain>:<port>/hubhook?key=<APIKEY>
 Configuration is included in:
 > config.py
 
-Please edit `APIKEY` if necessary. `HOOKS` dictionary defines reaction to received web hook calls. Key defines Image repository name (**without** namespace and tag) and a script to execute.
+Please edit `APIKEY` if necessary. `HOOKS` dictionary defines reaction to received web hook calls. Key defines Image repository name (**without** namespace and tag) and Value is a script to execute.
 Default configuration defines what to do when Docker Hub calls the web hook with repository name of `auto-flask`, the script to call is `scripts/redeploy.sh`.
 If you change Configuration then please build the Image with:
 ```
